@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MedMap — Streamlit App
+HopMap — Streamlit App
 Interactive web interface for retrieving place data from Google Maps Places API.
 """
 
@@ -56,7 +56,7 @@ SEARCH_OFFSETS = [
 # ============================================================================
 # Page config & CSS
 # ============================================================================
-st.set_page_config(page_title="MedMap Place Finder", page_icon="📍", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="HopMap Place Finder", page_icon="📍", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown(
     """
@@ -456,7 +456,7 @@ def main() -> None:
     # We will compute the real value before search if needed, but default to False
     usage_error = False
 
-    st.markdown('<h1 class="hero-title">📍 MedMap</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="hero-title">📍 HopMap</h1>', unsafe_allow_html=True)
     st.markdown('<p class="hero-sub">Discover places in any city — powered by Google Maps</p>', unsafe_allow_html=True)
 
     with st.sidebar:
@@ -804,7 +804,7 @@ def main() -> None:
                 args=(searched_city, searched_category)
             )
 
-    st.markdown('<div class="footer">MedMap · Built with Streamlit & Google Maps Places API</div>', unsafe_allow_html=True)
+    st.markdown('<div class="footer">HopMap · Built with Streamlit & Google Maps Places API</div>', unsafe_allow_html=True)
 
     # ------------------------------------------------------------------
     # Finally, render the sidebar dynamic content metrics using the container at the end
